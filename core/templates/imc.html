@@ -1,0 +1,23 @@
+{%extends 'base.html'%}
+{%load static%}
+
+{%block content%}
+
+    
+    <main>
+        <div class="formulario">
+            <label for="altura">altura em m: </label>
+            <input type="text" id="altura">
+            <label for="peso">peso em Kg: </label>
+            <input type="text" id="peso">
+            <button onclick="CalcularIMC()"> Calcular Meu IMC </button>
+            <p id="resultado"></p>
+        </div>
+    </main>
+    
+    
+
+
+    <script src="{%static 'imc.js'%}"></script>
+
+    {%endblock content%}
